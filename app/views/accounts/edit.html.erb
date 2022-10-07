@@ -1,0 +1,12 @@
+<%#= form_with model: @account, url: edit_user_account_path do |form| %>
+<%= form_with model: @account, url: accounts_update_path(account_id: @account.id), method: :put do |form| %>
+  <%= form.label :account_no %><br>
+    <%= form.text_field :account_no %>
+
+    <%= form.hidden_field :user_id, value: params[:user_id] %>
+
+  
+    <%= form.submit %>
+
+ 
+<% end %>

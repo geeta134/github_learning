@@ -1,0 +1,15 @@
+
+
+<%= form_with model: @account, url: users_id_accounts_new_path do |form| %>
+
+  <%= form.label :account_no %><br>
+    <%= form.text_field :account_no %>
+  
+
+    <%= form.hidden_field :user_id, value: params[:user_id] %>
+
+  
+    <%= form.submit %>
+
+ 
+<% end %>

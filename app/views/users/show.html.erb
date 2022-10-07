@@ -1,0 +1,28 @@
+<h1><%= @user.name %></h1>
+
+<h1><%= @user.description %></h1>
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %>
+
+<p><%= link_to 'Delete', @user, method: 'delete', data: { confirm: 'Are you sure?' }%></p>
+
+
+
+
+<%= link_to "Add account", new_user_account_path(user_id: @user.id) %>
+
+<%= link_to "show account", user_account_path(user_id: @user.id) %>
+
+
+<%= link_to "Edit account", edit_user_account_path(user_id: @user.id) %>
+
+
+
+
+
+
+
+
+

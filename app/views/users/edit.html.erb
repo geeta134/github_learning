@@ -1,0 +1,8 @@
+<h3>Edit</h3>
+<%= form_with model: @user do |form| %>
+  <p> First Name: <%= form.text_field :name %></p>
+  <p> Description: <%= form.text_field :description %></p>
+
+
+  <%= form.submit %>
+<% end %>
